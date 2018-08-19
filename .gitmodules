@@ -1,0 +1,3 @@
+[submodule "GBJAM6/libs/cpml"]
+	path = GBJAM6/libs/cpml
+	url = https://github.com/excessive/cpml.git
