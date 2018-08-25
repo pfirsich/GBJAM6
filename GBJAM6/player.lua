@@ -21,7 +21,7 @@ function player.accelerate(dt, dir, acceleration, maxVelocity)
     local projVel = player.velocity:dot(dir)
     local accelVel = acceleration * dt
     if projVel + accelVel > maxVelocity then
-        accelVel = maxVelocity - projVel
+        accelVel = math.max(0, maxVelocity - projVel)
     end
     player.velocity = player.velocity + dir * accelVel
 end
